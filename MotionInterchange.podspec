@@ -7,6 +7,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/material-motion/motion-interchange-objc"
   s.source       = { :git => "https://github.com/material-motion/motion-interchange-objc.git", :tag => "v" + s.version.to_s }
   s.platform     = :ios, "9.0"
+  s.swift_version = '5.0'
   s.requires_arc = true
 
   s.public_header_files = "src/*.h"

@@ -58,6 +58,7 @@
 - (void)testSystemModalMovementTimingCurveMatchesModalMovementTiming {
   ModalPresentationExtractionViewController *presentedViewController =
       [[ModalPresentationExtractionViewController alloc] initWithNibName:nil bundle:nil];
+  presentedViewController.modalPresentationStyle = UIModalPresentationFullScreen;
   XCTestExpectation *didComplete = [self expectationWithDescription:@"Animation completed"];
   [self.window.rootViewController presentViewController:presentedViewController
                                                animated:YES
