@@ -19,7 +19,7 @@ before_install:
     fi
 script:
   - if [ "$TOOLCHAIN" == "bazel" ]; then
-      ./bazelisk test //... --noshow_progress;
+      ./bazelisk test //...;
     elif [ "$TOOLCHAIN" == "cocoapods" ]; then
       pod lib lint;
     elif [ "$PROJECT" == "Catalog" ]; then
