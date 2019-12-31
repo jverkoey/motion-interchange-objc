@@ -85,9 +85,9 @@ objc_library(
 )
 
 ios_test_runner(
-    name = "IPHONE_7_PLUS_IN_10_3",
+    name = "IPHONE_7_PLUS_IN_11_4",
     device_type = "iPhone 7 Plus",
-    os_version = "10.3",
+    os_version = "11.4",
 )
 
 ios_test_runner(
@@ -112,7 +112,7 @@ ios_ui_test_suite(
     minimum_os_version = "9.0",
     timeout = "moderate",
     runners = [
-        ":IPHONE_7_PLUS_IN_10_3",
+        ":IPHONE_7_PLUS_IN_11_4",
         ":IPHONE_X_IN_11_4",
         ":IPHONE_XS_MAX_IN_12_2",
     ],
