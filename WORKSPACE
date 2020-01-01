@@ -13,12 +13,13 @@
 # limitations under the License.
 
 load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_file")
 
 git_repository(
     name = "bazel_workspace_apple",
     remote = "https://github.com/jverkoey/bazel-workspace-apple.git",
-    commit = "df02434910031031cb8c614f538c5966db283711",  # Dec 29, 2019
-    shallow_since = "1577726613 -0500",  # Recommended by bazel.
+    commit = "1398d78f68b3401e45d73e437063007e5215ff05",  # Dec 29, 2019
+    shallow_since = "1577916902 -0500",  # Recommended by bazel.
 )
 
 load("@bazel_workspace_apple//apple:repositories.bzl", "apple_workspace_dependencies")
